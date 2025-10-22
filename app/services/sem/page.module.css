@@ -1,0 +1,235 @@
+/* app/services/sem/page.module.css */
+
+/* Base Styles */
+.semServicesPage {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.semHeroSection {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.semHeroSection h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.semHeroSection p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* Content Sections */
+.semContentSection {
+  padding: 80px 0;
+}
+
+.semContentSection:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.semContentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  min-height: 500px;
+}
+
+/* Text Content */
+.semTextContent h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.semTextContent p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Lists */
+.semServicesList,
+.semBenefitsList {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+}
+
+.semServicesList li,
+.semBenefitsList li {
+  padding: 15px 0;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 1.1rem;
+  position: relative;
+  padding-left: 30px;
+}
+
+.semServicesList li:last-child,
+.semBenefitsList li:last-child {
+  border-bottom: none;
+}
+
+.semServicesList li::before,
+.semBenefitsList li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.semServicesList strong,
+.semBenefitsList strong {
+  color: #2c3e50;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Image Container */
+.semImageContainer {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.semImage {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  animation: floatUpDown 4s ease-in-out infinite;
+}
+
+/* Up-Down Animation */
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Image Left/Right Layout Variations */
+.imageLeft .semContentGrid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.imageRight .semContentGrid {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Ensure perfect content-image alignment */
+.semTextContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+/* CTA Section */
+.semCtaSection {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.semCtaSection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.semCtaSection p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  opacity: 0.9;
+}
+
+.semCtaButton {
+  background: white;
+  color: #667eea;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.semCtaButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover effects for images */
+.semImage:hover {
+  animation-duration: 2s;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .semContentGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .imageLeft .semContentGrid,
+  .imageRight .semContentGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .semImageContainer {
+    order: -1;
+  }
+  
+  .semHeroSection h1 {
+    font-size: 2.5rem;
+  }
+  
+  .semTextContent h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .semHeroSection {
+    padding: 60px 0;
+  }
+  
+  .semContentSection {
+    padding: 60px 0;
+  }
+  
+  .semHeroSection h1 {
+    font-size: 2rem;
+  }
+  
+  .semTextContent h2 {
+    font-size: 1.8rem;
+  }
+}

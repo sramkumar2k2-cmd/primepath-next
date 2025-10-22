@@ -1,0 +1,200 @@
+.getStartedPage {
+  padding: 120px 0 80px;
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: 700;
+}
+
+.pageHeader p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.getStartedContent {
+  text-align: center;
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.getStartedContent h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.getStartedContent p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.jobOpenings {
+  margin-top: 80px;
+}
+
+.jobsList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.jobCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 4px solid #667eea;
+}
+
+.jobCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.jobInfo h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.jobInfo p {
+  color: #666;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Animation for cards */
+.jobCard {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger animations */
+.jobCard:nth-child(1) { animation-delay: 0.1s; }
+.jobCard:nth-child(2) { animation-delay: 0.2s; }
+.jobCard:nth-child(3) { animation-delay: 0.3s; }
+.jobCard:nth-child(4) { animation-delay: 0.4s; }
+.jobCard:nth-child(5) { animation-delay: 0.5s; }
+.jobCard:nth-child(6) { animation-delay: 0.6s; }
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .jobCard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .jobApply {
+    align-self: stretch;
+  }
+
+  .jobApply .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .getStartedPage {
+    padding: 100px 0 60px;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .getStartedContent h2 {
+    font-size: 1.6rem;
+  }
+
+  .jobCard {
+    padding: 20px;
+  }
+
+  .jobInfo h3 {
+    font-size: 1.3rem;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .pageHeader p {
+    font-size: 1rem;
+  }
+
+  .getStartedContent {
+    padding: 30px 20px;
+    margin: 40px auto;
+  }
+
+  .getStartedContent h2 {
+    font-size: 1.4rem;
+  }
+
+  .getStartedContent p {
+    font-size: 1rem;
+  }
+}

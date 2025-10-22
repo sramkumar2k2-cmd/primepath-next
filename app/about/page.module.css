@@ -1,0 +1,259 @@
+.aboutPage {
+  padding: 120px 0 80px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.pageHeader p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* ====== About Section ====== */
+.aboutContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin: 60px 0;
+  align-items: center;
+}
+
+.aboutText h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #0b2447;
+}
+
+.aboutText p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.aboutImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutImg {
+  width: 100%;
+  max-width: 500px;
+  height: 450px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.aboutImg:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* ====== Why Choose Us & Extras Section ====== */
+.whyChooseUs,
+.extrasSection {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #1e2a38;
+}
+
+.reasonsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.reasonCard {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.reasonCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.reasonIcon {
+  font-size: 40px;
+  color: #0073e6;
+  margin-bottom: 15px;
+}
+
+.reasonCard h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.reasonCard p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ====== Join Our Team Section ====== */
+.joinTeam {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.teamCard {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.teamCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.teamCard h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.teamCard p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ====== Animations ====== */
+.fadeIn {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease forwards;
+}
+
+.slideInRight {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: slideInRightAnimation 1s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRightAnimation {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 968px) {
+  .aboutContent {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .aboutImg {
+    max-width: 350px;
+    height: 350px;
+  }
+
+  .sectionTitle {
+    font-size: 1.6rem;
+  }
+
+  .reasonCard,
+  .teamCard {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutPage {
+    padding: 80px 0 40px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .aboutContent {
+    gap: 40px;
+    margin: 40px 0;
+  }
+
+  .aboutText h2 {
+    font-size: 1.8rem;
+  }
+
+  .aboutImg {
+    max-width: 100%;
+    height: 300px;
+  }
+
+  .whyChooseUs,
+  .extrasSection,
+  .joinTeam {
+    margin-top: 60px;
+  }
+
+  .reasonsGrid,
+  .teamGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutText h2 {
+    font-size: 1.6rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.4rem;
+  }
+
+  .reasonCard,
+  .teamCard {
+    padding: 20px;
+  }
+
+  .aboutImg {
+    height: 250px;
+  }
+}

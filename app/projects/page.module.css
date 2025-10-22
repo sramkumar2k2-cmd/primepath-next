@@ -1,0 +1,705 @@
+.projectsPage {
+  padding: 120px 0 80px;
+  background-color: #f9fafc;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 700;
+}
+
+.pageHeader p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.projectsContent {
+  text-align: center;
+  max-width: 800px;
+  margin: 60px auto;
+}
+
+.projectsContent h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.projectsContent p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.featuredProject {
+  margin-top: 80px;
+}
+
+.projectShowcase {
+  margin-top: 50px;
+  position: relative;
+}
+
+.projectNavigation {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navBtn {
+  background: #667eea;
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.navBtn:hover {
+  background: #5a6fd8;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.projectDisplay {
+  flex: 1;
+  display: flex;
+  gap: 40px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  min-height: 400px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.projectDisplay.swipe-left {
+  transform: translateX(-100px);
+  opacity: 0;
+}
+
+.projectDisplay.swipe-right {
+  transform: translateX(100px);
+  opacity: 0;
+}
+
+.projectMainInfo {
+  flex: 1;
+}
+
+.projectMainInfo h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.projectMeta {
+  margin-bottom: 20px;
+}
+
+.projectMeta span {
+  padding: 5px 15px;
+  background: #f5f7fa;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #667eea;
+  font-weight: 500;
+}
+
+.projectMainInfo p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: transparent;
+  color: #667eea;
+  border: 2px solid #667eea;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+}
+
+.btn.primary:hover {
+  background: #5a6fd8;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.btn:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.teamContributions {
+  margin: 25px 0;
+}
+
+.teamContributions h4 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contributionsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.contributionRole h5 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #667eea;
+}
+
+.teamMemberContribution {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.memberSkills {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+.projectDetails {
+  flex: 1;
+  border-left: 1px solid #eee;
+  padding-left: 40px;
+}
+
+.projectDetails h4 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.detailGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.detailItem.fullWidth {
+  grid-column: 1 / -1;
+}
+
+.detailLabel {
+  font-weight: 600;
+  color: #667eea;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.techTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.techTag {
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Color coding for different technologies */
+.techTag:nth-child(1) { background: #e3f2fd; color: #1976d2; }
+.techTag:nth-child(2) { background: #e8f5e9; color: #388e3c; }
+.techTag:nth-child(3) { background: #fff3e0; color: #f57c00; }
+.techTag:nth-child(4) { background: #fce4ec; color: #c2185b; }
+.techTag:nth-child(5) { background: #f3e5f5; color: #7b1fa2; }
+.techTag:nth-child(6) { background: #e0f2f1; color: #00796b; }
+.techTag:nth-child(7) { background: #fff8e1; color: #ff8f00; }
+.techTag:nth-child(8) { background: #e8eaf6; color: #303f9f; }
+
+.resultsHighlight {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.projectIndicators {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicator.active {
+  background: #667eea;
+  transform: scale(1.2);
+}
+
+.indicator:hover {
+  background: #5a6fd8;
+}
+
+/* All Projects Section */
+.allProjects {
+  margin-top: 80px;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.projectCard {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  border: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  animation: popUp 0.6s ease forwards;
+}
+
+/* Staggered animation for project cards */
+.projectCard:nth-child(1) { animation-delay: 0.1s; }
+.projectCard:nth-child(2) { animation-delay: 0.2s; }
+.projectCard:nth-child(3) { animation-delay: 0.3s; }
+.projectCard:nth-child(4) { animation-delay: 0.4s; }
+
+.projectCard:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  border-color: #667eea;
+}
+
+.projectCard.active {
+  border-color: #667eea;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+}
+
+.projectInfo {
+  flex: 1;
+}
+
+.projectInfo h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 600;
+}
+
+.projectCard .projectMeta {
+  margin-bottom: 15px;
+}
+
+.projectCard .projectMeta span {
+  padding: 4px 12px;
+  background: #f5f7fa;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #667eea;
+  font-weight: 500;
+}
+
+.projectCard p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.projectTeamPreview {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.teamPreview, .projectTech, .projectTimeline {
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+}
+
+.teamPreview strong, .projectTech strong, .projectTimeline strong {
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.previewNames, .previewTech {
+  color: #666;
+}
+
+.projectLink {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.projectLink .btn {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Team Section */
+.teamSection {
+  margin-top: 100px;
+}
+
+.teamIntro {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 50px;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.roleTeamSection {
+  margin-bottom: 60px;
+}
+
+.roleTitle {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.teamCard {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  animation: popUp 0.6s ease forwards;
+}
+
+/* Staggered animation for team cards - same pattern as projects */
+.teamCard:nth-child(1) { animation-delay: 0.1s; }
+.teamCard:nth-child(2) { animation-delay: 0.2s; }
+.teamCard:nth-child(3) { animation-delay: 0.3s; }
+.teamCard:nth-child(4) { animation-delay: 0.4s; }
+.teamCard:nth-child(5) { animation-delay: 0.5s; }
+.teamCard:nth-child(6) { animation-delay: 0.6s; }
+.teamCard:nth-child(7) { animation-delay: 0.7s; }
+.teamCard:nth-child(8) { animation-delay: 0.8s; }
+.teamCard:nth-child(9) { animation-delay: 0.9s; }
+
+.teamCard:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.memberImage {
+  margin-bottom: 20px;
+}
+
+.imagePlaceholder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.teamCard:hover .imagePlaceholder {
+  transform: scale(1.1);
+}
+
+.memberInfo h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.position {
+  color: #667eea;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.memberSkills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.skillTag {
+  background: #f5f7fa;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  color: #667eea;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.teamCard:hover .skillTag {
+  transform: translateY(-2px);
+  background: #667eea;
+  color: white;
+}
+
+.bio {
+  color: #666;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.memberProjects {
+  margin-top: 15px;
+}
+
+.projectTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.projectTag {
+  background: #f0f7ff;
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  color: #667eea;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.teamCard:hover .projectTag {
+  transform: translateY(-2px);
+  background: #667eea;
+  color: white;
+}
+
+/* Unified Pop-up Animation */
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  50% {
+    transform: translateY(-5px) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Additional animations for variety */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slideInLeft {
+  animation: slideInLeft 0.6s ease forwards;
+}
+
+/* Enhanced hover effects for project cards */
+.projectCard:hover .projectMeta span {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.projectCard:hover .techTag {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Consistent animation delays across sections */
+.allProjects .projectCard,
+.teamSection .teamCard {
+  animation: popUp 0.6s ease forwards;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .projectDisplay {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .projectDetails {
+    border-left: none;
+    border-top: 1px solid #eee;
+    padding-left: 0;
+    padding-top: 30px;
+  }
+  
+  .detailGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contributionsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectsPage {
+    padding: 100px 0 60px;
+  }
+  
+  .projectNavigation {
+    flex-direction: column;
+  }
+  
+  .navBtn {
+    order: 2;
+    margin-top: 20px;
+  }
+  
+  .projectDisplay {
+    padding: 25px;
+  }
+  
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .projectCard {
+    padding: 20px;
+  }
+  
+  .navBtn {
+    width: 45px;
+    height: 45px;
+  }
+  
+  /* Adjust animation delays for mobile */
+  .projectCard:nth-child(1) { animation-delay: 0.1s; }
+  .projectCard:nth-child(2) { animation-delay: 0.2s; }
+  .projectCard:nth-child(3) { animation-delay: 0.3s; }
+  .projectCard:nth-child(4) { animation-delay: 0.4s; }
+  
+  .teamCard:nth-child(1) { animation-delay: 0.1s; }
+  .teamCard:nth-child(2) { animation-delay: 0.2s; }
+  .teamCard:nth-child(3) { animation-delay: 0.3s; }
+  .teamCard:nth-child(4) { animation-delay: 0.4s; }
+  .teamCard:nth-child(5) { animation-delay: 0.5s; }
+  .teamCard:nth-child(6) { animation-delay: 0.6s; }
+}
+
+/* Scroll animation classes for future use */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.scroll-animate.animated {
+  opacity: 1;
+  transform: translateY(0);
+}

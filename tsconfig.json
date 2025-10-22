@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/WhatsAppButton/WhatsAppButton.jsx", "src/components/navigation/Navigation.jsx", "src/components/MouseEffects/MouseEffects.jsx", "src/components/Header/Header.jsx", "src/components/Footer/Footer.jsx", "app/App.tsx", "app/about/page.tsx", "src/components/ScrollToTop.jsx", "app/page.tsx"],
   "exclude": ["node_modules"]
 }

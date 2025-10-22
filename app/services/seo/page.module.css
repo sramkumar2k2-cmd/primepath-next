@@ -1,0 +1,531 @@
+/* app/services/seo/page.module.css */
+
+/* Base Styles */
+.seoServicesPage {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Hero Section */
+.seoHeroSection {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.seoHeroSection h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.seoHeroSection p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* Content Sections */
+.seoContentSection {
+  padding: 80px 0;
+}
+
+.seoContentSection:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.seoContentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  min-height: 500px;
+}
+
+/* Text Content */
+.seoTextContent h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.seoTextContent p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Lists */
+.seoServicesList,
+.seoBenefitsList {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+}
+
+.seoServicesList li,
+.seoBenefitsList li {
+  padding: 15px 0;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 1.1rem;
+  position: relative;
+  padding-left: 30px;
+}
+
+.seoServicesList li:last-child,
+.seoBenefitsList li:last-child {
+  border-bottom: none;
+}
+
+.seoServicesList li::before,
+.seoBenefitsList li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.seoServicesList strong,
+.seoBenefitsList strong {
+  color: #2c3e50;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Image Container */
+.seoImageContainer {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seoImage {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  animation: floatUpDown 4s ease-in-out infinite;
+}
+
+/* Up-Down Animation */
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Image Left/Right Layout Variations */
+.imageLeft .seoContentGrid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.imageRight .seoContentGrid {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Ensure perfect content-image alignment */
+.seoTextContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+/* CTA Section */
+.seoCtaSection {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.seoCtaSection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.seoCtaSection p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  opacity: 0.9;
+}
+
+.seoCtaButton {
+  background: white;
+  color: #667eea;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.seoCtaButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover effects for images */
+.seoImage:hover {
+  animation-duration: 2s;
+}
+
+/* Services Page Styles */
+.servicesPage {
+  padding: 120px 0 80px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== Header ===== */
+.pageHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.pageHeader h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0b2447;
+  margin-bottom: 15px;
+}
+
+.pageHeader p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ===== Mobile Services Dropdown ===== */
+.mobileServicesDropdown {
+  display: none;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.mobileDropdownToggle {
+  width: 100%;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.mobileDropdownToggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dropdownArrow {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.dropdownArrow.open {
+  transform: rotate(180deg);
+}
+
+.mobileDropdownMenu {
+  background: white;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobileDropdownItem {
+  display: block;
+  padding: 15px 20px;
+  color: #0b2447;
+  text-decoration: none;
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.mobileDropdownItem:hover {
+  background: #f8f9fa;
+  color: #667eea;
+  padding-left: 25px;
+}
+
+.mobileDropdownItem:last-child {
+  border-bottom: none;
+}
+
+/* ===== Layout ===== */
+.servicesList {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.serviceItem {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+.serviceItem:last-child {
+  margin-bottom: 0;
+}
+
+.serviceItem:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* ===== Text Section ===== */
+.serviceContent {
+  flex: 1;
+}
+
+.serviceContent h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0b2447;
+}
+
+.serviceContent p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.serviceContent ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.serviceContent li {
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.serviceContent li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+/* ===== Image Section ===== */
+.serviceImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.serviceImg {
+  height: 400px;
+  border-radius: 15px;
+  object-fit: contain;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.serviceImg:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== CTA Section ===== */
+.ctaSection {
+  text-align: center;
+  margin-top: 100px;
+  padding: 70px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 5;
+}
+
+.ctaSection h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.ctaSection p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #f2f2f2;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 968px) {
+  .servicesPage {
+    padding: 100px 0 60px;
+  }
+
+  .mobileServicesDropdown {
+    display: block;
+  }
+
+  .serviceItem,
+  .serviceItem:nth-child(even) {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+
+  .serviceImg {
+    max-width: 350px;
+    height: auto;
+  }
+
+  .serviceContent li {
+    padding-left: 0;
+  }
+
+  .serviceContent li::before {
+    position: static;
+    margin-right: 8px;
+  }
+
+  .pageHeader h1 {
+    font-size: 2rem;
+  }
+
+  .pageHeader p {
+    font-size: 1.1rem;
+  }
+
+  .ctaSection {
+    margin-top: 60px;
+    padding: 50px 20px;
+  }
+
+  .ctaSection h2 {
+    font-size: 2rem;
+  }
+
+  .seoContentGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .imageLeft .seoContentGrid,
+  .imageRight .seoContentGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .seoImageContainer {
+    order: -1;
+  }
+  
+  .seoHeroSection h1 {
+    font-size: 2.5rem;
+  }
+  
+  .seoTextContent h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .seoHeroSection {
+    padding: 60px 0;
+  }
+  
+  .seoContentSection {
+    padding: 60px 0;
+  }
+  
+  .seoHeroSection h1 {
+    font-size: 2rem;
+  }
+  
+  .seoTextContent h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .servicesPage {
+    padding: 80px 0 40px;
+  }
+
+  .pageHeader h1 {
+    font-size: 1.8rem;
+  }
+
+  .pageHeader p {
+    font-size: 1rem;
+  }
+
+  .serviceContent h2 {
+    font-size: 1.6rem;
+  }
+
+  .serviceContent p {
+    font-size: 1rem;
+  }
+
+  .serviceImg {
+    max-width: 280px;
+  }
+
+  .ctaSection {
+    padding: 40px 15px;
+  }
+
+  .ctaSection h2 {
+    font-size: 1.6rem;
+  }
+}

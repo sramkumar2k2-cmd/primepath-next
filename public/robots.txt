@@ -1,0 +1,11 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+
+# Allow search engines to crawl all main pages
+Allow: /about
+Allow: /service
+Allow: /blog
+Allow: /contact
+Allow: /getstart
+Allow: /project

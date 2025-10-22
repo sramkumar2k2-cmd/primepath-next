@@ -1,0 +1,398 @@
+/* ================================
+   HEADER STYLES
+   ================================ */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 80px; /* ✅ Fixed header height */
+}
+
+/* ================================
+   LOGO
+   ================================ */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logoImg {
+  height: 240px; /* ✅ Make logo image large */
+  width: auto;
+  transform: scale(0.8); /* ✅ Scales down to fit header */
+  transform-origin: left center;
+  /* transition: transform 0.3s ease; */
+}
+
+/* ================================
+   NAVIGATION
+   ================================ */
+.nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+  width: 100%;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #667eea;
+}
+
+/* ================================
+   DROPDOWN MENU
+   ================================ */
+.dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dropdownToggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #333;
+  font-weight: 500;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.dropdownToggle:hover {
+  color: #667eea;
+}
+
+.dropdownArrow {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+  font-size: 0.8rem;
+}
+
+.dropdown.open .dropdownArrow {
+  transform: rotate(180deg);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 8px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  display: none;
+  flex-direction: column;
+  min-width: 220px;
+  z-index: 100;
+}
+
+.dropdown.open .dropdownMenu {
+  display: flex;
+}
+
+.dropdownMenu a {
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.3s ease, color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.dropdownMenu a:hover {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: #fff;
+}
+
+/* ================================
+   MOBILE CONTACT INFO
+   ================================ */
+.mobileContactInfo {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  width: 100%;
+  align-items: center;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 280px;
+  justify-content: center;
+  text-align: center;
+}
+
+.contactItem:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.contactIcon {
+  font-size: 1.2rem;
+}
+
+.contactText {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ================================
+   HAMBURGER MENU
+   ================================ */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.hamburgerOpen span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburgerOpen span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburgerOpen span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* ================================
+   MOBILE STYLES
+   ================================ */
+@media (max-width: 768px) {
+  .container {
+    height: 65px;
+  }
+
+  .logoImg {
+    height: 240px;
+    transform: scale(0.7);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    position: fixed;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 65px);
+    background: white;
+    flex-direction: column;
+    padding: 30px 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    overflow-y: auto;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .navOpen {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav a {
+    font-size: 1.1rem;
+    padding: 12px 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+    max-width: 280px;
+  }
+
+  .dropdown {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dropdownToggle {
+    width: 100%;
+    justify-content: center;
+    font-size: 1.1rem;
+    padding: 12px 0;
+    max-width: 280px;
+  }
+
+  .dropdownMenu {
+    position: static;
+    box-shadow: none;
+    background: transparent;
+    margin-top: 0;
+    width: 100%;
+    display: none;
+    align-items: center;
+  }
+
+  .dropdown.open .dropdownMenu {
+    display: flex;
+  }
+
+  .dropdownMenu a {
+    padding: 10px 0;
+    font-size: 1rem;
+    text-align: center;
+    border-bottom: none;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .mobileContactInfo {
+    display: flex;
+  }
+}
+
+/* ================================
+   SMALL MOBILE DEVICES
+   ================================ */
+@media (max-width: 480px) {
+  .container {
+    height: 60px;
+  }
+
+  .logoImg {
+    height: 240px;
+    /* transform: scale(0.6); */
+  }
+
+  .nav {
+    padding: 20px 15px;
+  }
+
+  .nav a {
+    font-size: 1rem;
+    max-width: 250px;
+  }
+
+  .contactText {
+    font-size: 0.8rem;
+  }
+
+  .contactItem {
+    max-width: 250px;
+    padding: 10px 15px;
+  }
+
+  .dropdownToggle {
+    max-width: 250px;
+  }
+
+  .dropdownMenu a {
+    max-width: 230px;
+  }
+}
+
+/* ================================
+   HIDE MOBILE CONTACT INFO ON DESKTOP
+   ================================ */
+@media (min-width: 769px) {
+  .mobileContactInfo {
+    display: none;
+  }
+}
+
+/* Additional navigation styles */
+.nav {
+  display: flex;
+  gap: 25px; /* Slightly reduced gap to accommodate new item */
+  align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav {
+    gap: 15px;
+  }
+  
+  .nav a {
+    font-size: 1.1rem;
+    padding: 12px 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav a {
+    font-size: 1rem;
+    max-width: 250px;
+  }
+}
