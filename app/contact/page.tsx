@@ -24,7 +24,7 @@ export const metadata = {
         url: '/images/og-img.png', 
         width: 1200,
         height: 630,
-        alt: 'Contact Primepath - Partner with Digital Marketing Experts', // Alt text for OG image
+        alt: 'Contact Primepath - Partner with Digital Marketing Experts', 
       },
     ],
     type: 'website',
@@ -40,7 +40,7 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: '', // Same as URL
+    canonical: 'https://primepath-next.vercel.app/contact',
   },
 };
 

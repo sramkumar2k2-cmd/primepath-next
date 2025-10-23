@@ -15,7 +15,7 @@ export const metadata = {
   openGraph: {
     title: 'Get Started with Primepath | Begin Your Digital Success Journey', 
     description: 'Partner with Primepath to begin your digital growth journey. Our expert team provides tailored SEO, SMM, SEM, and web development services designed to boost your online visibility, strengthen your brand, and achieve measurable business success.', 
-    url: '', 
+    url: 'https://primepath-next.vercel.app/getstarted', 
     siteName: 'Primepath', // 
     images: [
       {
@@ -38,7 +38,7 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: '', // Same as URL
+    canonical: 'https://primepath-next.vercel.app/getstarted', // Same as URL
   },
 };
 

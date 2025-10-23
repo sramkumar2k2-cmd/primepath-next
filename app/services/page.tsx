@@ -36,7 +36,7 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: '', // Same as URL
+    canonical: 'https://primepath-next.vercel.app/services', // Same as URL
   },
 };
 

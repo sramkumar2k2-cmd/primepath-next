@@ -16,7 +16,7 @@ export const metadata = {
   openGraph: {
     title: 'Primepath Projects - Real Results Through Digital Innovation', 
     description: 'Discover how Primepath delivers proven digital success through powerful SEO, social media, and web development projects. Each campaign is crafted to enhance visibility, drive engagement, and generate real results that accelerate business growth.', 
-    url: '', 
+    url: 'https://primepath-next.vercel.app/projects', 
     siteName: 'Primepath', 
     images: [
       {
@@ -39,7 +39,7 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: '', 
+    canonical: 'https://primepath-next.vercel.app/projects', 
   },
 };
 

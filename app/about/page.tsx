@@ -17,7 +17,7 @@ export const metadata = {
   openGraph: {
     title: 'About Primepath - Leading Digital Marketing Innovators', 
     description: 'Primepath is a results-driven digital marketing agency offering SEO, SMM, SEM, and web development. We help brands grow through creative and strategic digital transformation.', // Same or slightly expanded version of description
-    url: '', // Full URL to the page
+    url: 'https://primepath-next.vercel.app/about', // Full URL to the page
     siteName: 'Primepath', // 
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: '',
+    canonical: 'https://primepath-next.vercel.app/about',
   },
 
 };

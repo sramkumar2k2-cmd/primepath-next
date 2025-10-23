@@ -15,7 +15,7 @@ export const metadata = {
   openGraph: {
     title: 'Primepath - Elevate Your Business with Digital Excellence', 
     description: 'Primepath delivers top-notch digital marketing, SEO, SMM, SEM, content writing, and web development services. Build your brand, increase traffic, and grow your business with our tailored online strategies.', // Same or slightly expanded version of description
-    url: '', 
+    url: 'https://primepath-next.vercel.app/', 
     siteName: 'Primepath',
     images: [
       {
@@ -38,7 +38,7 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: '',
+    canonical: 'https://primepath-next.vercel.app/',
   },
 };
 
