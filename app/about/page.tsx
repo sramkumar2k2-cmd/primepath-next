@@ -1,5 +1,4 @@
-// 'use client' directive is fine here as this is a client-side component.
-
+// app/about/page.tsx
 import React from 'react';
 import { FaCheckCircle, FaLightbulb, FaBullseye, FaHandshake, FaAward, FaUsers, FaGlobe } from 'react-icons/fa';
 import Image from 'next/image';
@@ -14,35 +13,34 @@ export const metadata = {
      'trusted SEO experts',
       'digital marketing professionals', 
       'best online marketing team',
-    // Add 5–7 relevant keywords
   ],
   openGraph: {
-    title: 'About Primepath - Leading Digital Marketing Innovators', // Usually same as title
+    title: 'About Primepath - Leading Digital Marketing Innovators', 
     description: 'Primepath is a results-driven digital marketing agency offering SEO, SMM, SEM, and web development. We help brands grow through creative and strategic digital transformation.', // Same or slightly expanded version of description
     url: '', // Full URL to the page
-    siteName: 'Primepath', // Your brand
+    siteName: 'Primepath', // 
     images: [
       {
-        url: '/images/og img.png', // Full image URL (1200x630 recommended)
+        url: '/images/og-img.png', 
         width: 1200,
         height: 630,
-        alt: 'About Primepath - Leading Digital Marketing Innovators', // Alt text for OG image
+        alt: 'About Primepath - Leading Digital Marketing Innovators', 
       },
     ],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: '', // Same as title
-    description: '', // Same as description
-    images: [''], // Same image as OG
+    title: 'About Primepath - Leading Digital Marketing Innovators', // Same as title
+    description: 'Primepath is a results-driven digital marketing agency offering SEO, SMM, SEM, and web development. We help brands grow through creative and strategic digital transformation.', // Same as description
+    images: ['/images/og-img.png'], // Same image as OG
   },
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: '', // Same as URL
+    canonical: '',
   },
 
 };

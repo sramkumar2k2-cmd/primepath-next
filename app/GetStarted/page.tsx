@@ -2,6 +2,46 @@ import React from 'react';
 import Link from 'next/link';
 import styles from './page.module.css';
 
+export const metadata = {
+  title: 'Get Started with Primepath | Begin Your Digital Success Journey', 
+  description: ' Start your digital transformation with Primepath. Choose from expert SEO, SMM, SEM, and web development services customized to elevate your online growth',
+  keywords: [
+    'start digital project with Primepath',
+    'online marketing startup support',
+    'website and SEO launch plan',
+    'business growth services',
+    'custom digital marketing strategy',
+  ],
+  openGraph: {
+    title: 'Get Started with Primepath | Begin Your Digital Success Journey', 
+    description: 'Partner with Primepath to begin your digital growth journey. Our expert team provides tailored SEO, SMM, SEM, and web development services designed to boost your online visibility, strengthen your brand, and achieve measurable business success.', 
+    url: '', 
+    siteName: 'Primepath', // 
+    images: [
+      {
+        url: '/images/og-img.png', // Full image URL (1200x630 recommended)
+        width: 1200,
+        height: 630,
+        alt: 'Get Started with Primepath | Begin Your Digital Success Journey', // Alt text for OG image
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Get Started with Primepath | Begin Your Digital Success Journey', 
+    description: 'Partner with Primepath to begin your digital growth journey. Our expert team provides tailored SEO, SMM, SEM, and web development services designed to boost your online visibility, strengthen your brand, and achieve measurable business success.', 
+    images: ['/images/og-img.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: '', // Same as URL
+  },
+};
+
 const Services = () => {
   const services = [
     {

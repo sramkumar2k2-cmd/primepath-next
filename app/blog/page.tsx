@@ -2,6 +2,46 @@ import React from 'react';
 import Link from 'next/link';
 import styles from './page.module.css';
 
+export const metadata = {
+  title: 'Primepath Blog | Digital Marketing Tips & Industry Insights', 
+  description: 'Read Primepath expert blog on SEO, SMM, SEM, web design, and digital strategy to stay updated with the latest marketing trends and tips.', 
+  keywords: [
+    'digital marketing blog',
+    'SEO and SEM tips',
+    'social media marketing insights',
+    'Primepath marketing trends',
+    'web development and content writing',
+  ],
+  openGraph: {
+    title: 'Primepath Blog - Learn, Grow & Master Digital Marketing', 
+    description: 'Primepath blog brings you valuable insights into SEO, SMM, SEM, web development, and email marketing. Learn proven tactics and trends that elevate your digital presence and performance.', 
+    url: '', 
+    siteName: 'Primepath', 
+    images: [
+      {
+        url: '/images/og-img.png',
+        width: 1200,
+        height: 630,
+        alt: '', 
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Primepath Blog - Learn, Grow & Master Digital Marketing', 
+    description: 'Primepath blog brings you valuable insights into SEO, SMM, SEM, web development, and email marketing. Learn proven tactics and trends that elevate your digital presence and performance.', 
+    images: ['/images/og-img.png'], 
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: '', // Same as URL
+  },
+};
+
 const Blog = () => {
   const blogPosts = [
     {

@@ -48,7 +48,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Organization',
-              name: 'PrimePath',
+              name: 'Primepath',
               url: 'https://primepath.in',
               logo: 'https://primepath.in/images/logo.png',
               sameAs: [
