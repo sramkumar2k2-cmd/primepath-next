@@ -92,8 +92,8 @@ export default function RootLayout({
               url: 'https://primepath-next.vercel.app/',
               logo: 'https://primepath-next.vercel.app/logo.png',
               sameAs: [
-                'https://www.facebook.com/primepath',
-                'https://www.linkedin.com/company/primepath',
+                'https://www.facebook.com/primepathofficial',
+                'https://www.instagram.com/primepath_official',
               ],
             }),
           }}

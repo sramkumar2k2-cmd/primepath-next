@@ -32,130 +32,131 @@ const Projects = () => {
 
   const projects: Project[] = [
     {
-      title: 'E-commerce Platform Redesign',
+      title: 'Web Development & Digital Marketing for Tech Startup',
       type: 'Web Development',
-      link: 'https://example-ecommerce.com',
-      description: 'Complete redesign of an e-commerce platform with improved UX and conversion optimization.',
+      link: 'https://primepath-next.vercel.app/',
+      description: 'Built a responsive website and executed tailored digital campaigns to accelerate brand growth and engagement for a rising tech company.',
       details: {
-        developers: ['Sarah Johnson', 'Michael Chen'],
-        designers: ['Emma Rodriguez'],
-        contentCreators: ['David Wilson'],
-        seoSpecialists: ['Lisa Thompson'],
-        technologies: ['React', 'Node.js', 'MongoDB', 'AWS'],
-        timeline: '3 months',
-        results: 'Increased conversion rate by 35% and improved page load speed by 50%'
+        developers: ['kumar'],
+        designers: [],
+        contentCreators: ['Ram'],
+        seoSpecialists: ['RamKumar'],
+        technologies: ['Next.js'],
+        timeline: '1 months',
+        results: 'Built a fully optimized website for mobile and desktop, improving conversion rates and overall performance.'
       }
     },
+    // {
+    //   title: 'Healthcare Mobile App',
+    //   type: 'Mobile Development',
+    //   link: 'https://example-healthapp.com',
+    //   description: 'Developed a comprehensive healthcare app for patient management and telemedicine services.',
+    //   details: {
+    //     developers: ['Michael Chen', 'Alex Kim'],
+    //     designers: ['Emma Rodriguez', 'James Wilson'],
+    //     contentCreators: ['Sophia Martinez'],
+    //     seoSpecialists: ['Lisa Thompson', 'Robert Davis'],
+    //     technologies: ['React Native', 'Firebase', 'Node.js'],
+    //     timeline: '6 months',
+    //     results: 'Achieved 50,000+ downloads in first 3 months with 4.8-star rating'
+    //   }
+    // },
+    // {
+    //   title: 'Corporate Branding Campaign',
+    //   type: 'Digital Marketing',
+    //   link: 'https://example-corporate.com',
+    //   description: 'Complete rebranding and digital marketing campaign for a Fortune 500 company.',
+    //   details: {
+    //     developers: ['Alex Kim'],
+    //     designers: ['James Wilson', 'Emma Rodriguez'],
+    //     contentCreators: ['David Wilson', 'Sophia Martinez'],
+    //     seoSpecialists: ['Robert Davis', 'Lisa Thompson'],
+    //     technologies: ['WordPress', 'Google Analytics', 'SEMrush'],
+    //     timeline: '4 months',
+    //     results: 'Increased brand awareness by 65% and organic traffic by 120%'
+    //   }
+    // },
     {
-      title: 'Healthcare Mobile App',
-      type: 'Mobile Development',
-      link: 'https://example-healthapp.com',
-      description: 'Developed a comprehensive healthcare app for patient management and telemedicine services.',
-      details: {
-        developers: ['Michael Chen', 'Alex Kim'],
-        designers: ['Emma Rodriguez', 'James Wilson'],
-        contentCreators: ['Sophia Martinez'],
-        seoSpecialists: ['Lisa Thompson', 'Robert Davis'],
-        technologies: ['React Native', 'Firebase', 'Node.js'],
-        timeline: '6 months',
-        results: 'Achieved 50,000+ downloads in first 3 months with 4.8-star rating'
-      }
-    },
-    {
-      title: 'Corporate Branding Campaign',
-      type: 'Digital Marketing',
-      link: 'https://example-corporate.com',
-      description: 'Complete rebranding and digital marketing campaign for a Fortune 500 company.',
-      details: {
-        developers: ['Alex Kim'],
-        designers: ['James Wilson', 'Emma Rodriguez'],
-        contentCreators: ['David Wilson', 'Sophia Martinez'],
-        seoSpecialists: ['Robert Davis', 'Lisa Thompson'],
-        technologies: ['WordPress', 'Google Analytics', 'SEMrush'],
-        timeline: '4 months',
-        results: 'Increased brand awareness by 65% and organic traffic by 120%'
-      }
-    },
-    {
-      title: 'Educational Platform',
+      title: 'E-commerce Platform design',
       type: 'Web Development',
-      link: 'https://example-eduplatform.com',
+      link: '',
       description: 'Interactive learning platform with personalized content and progress tracking.',
       details: {
-        developers: ['Sarah Johnson', 'Michael Chen', 'Alex Kim'],
-        designers: ['Emma Rodriguez'],
-        contentCreators: ['David Wilson', 'Sophia Martinez'],
-        seoSpecialists: ['Lisa Thompson'],
-        technologies: ['Vue.js', 'Python', 'PostgreSQL', 'Docker'],
-        timeline: '5 months',
-        results: 'Serving 10,000+ active users with 95% satisfaction rate'
+        developers: ['Emma'],
+        designers: [''],
+        contentCreators: [''],
+        seoSpecialists: [''],
+        technologies: ['Python', 'Django', '', ''],
+        timeline: '1 months',
+        results: 'Successfully hosted and maintained a scalable platform with exceptional performance and user satisfaction.'
       }
     }
   ];
 
   const teamMembers: TeamMember[] = [
     {
-      name: 'Sarah Johnson',
+      name: 'Kumar',
       position: 'Lead Frontend Developer',
-      bio: 'Specialized in React and Vue.js with 8 years of experience building responsive web applications.',
+      bio: 'Specialized in React and Vue.js with 1 years of experience building responsive web applications.',
       skills: ['React', 'Vue.js', 'JavaScript', 'TypeScript'],
       projects: ['E-commerce Platform Redesign', 'Educational Platform']
     },
     {
-      name: 'Michael Chen',
+      name: 'Emma',
       position: 'Full Stack Developer',
-      bio: 'Expert in Node.js and database architecture with a passion for creating scalable solutions.',
-      skills: ['Node.js', 'MongoDB', 'React', 'AWS'],
-      projects: ['E-commerce Platform Redesign', 'Healthcare Mobile App', 'Educational Platform']
+      bio: 'Expert in Python and Django, with a passion for building scalable and efficient web solutions.',
+      skills: ['Python', 'Django', 'React', 'PHP'],
+      projects: ['E-commerce Platform design', ]
     },
+    // {
+    //   name: 'Alex Kim',
+    //   position: 'Mobile Developer',
+    //   bio: 'Specialized in cross-platform mobile development using React Native and Flutter.',
+    //   skills: ['React Native', 'Flutter', 'Firebase', 'Node.js'],
+    //   projects: ['Healthcare Mobile App', 'Corporate Branding Campaign', 'Educational Platform']
+    // },
+    // {
+    //   name: 'Emma Rodriguez',
+    //   position: 'UI/UX Designer',
+    //   bio: 'Award-winning designer focused on creating intuitive user experiences across all platforms.',
+    //   skills: ['UI/UX Design', 'Figma', 'Adobe Creative Suite', 'Prototyping'],
+    //   projects: ['E-commerce Platform Redesign', 'Healthcare Mobile App', 'Corporate Branding Campaign', 'Educational Platform']
+    // },
+    // {
+    //   name: 'James Wilson',
+    //   position: 'Graphic Designer',
+    //   bio: 'Creative visual designer with a keen eye for typography, color theory, and brand identity.',
+    //   skills: ['Graphic Design', 'Branding', 'Typography', 'Illustration'],
+    //   projects: ['Healthcare Mobile App', 'Corporate Branding Campaign']
+    // },
+    // {
+    //   name: 'David Wilson',
+    //   position: 'Content Creator',
+    //   bio: 'Creative storyteller with expertise in developing engaging content that drives conversions.',
+    //   skills: ['Content Creation', 'Video Production', 'Social Media', 'Storytelling'],
+    //   projects: ['E-commerce Platform Redesign', 'Corporate Branding Campaign']
+    // },
     {
-      name: 'Alex Kim',
-      position: 'Mobile Developer',
-      bio: 'Specialized in cross-platform mobile development using React Native and Flutter.',
-      skills: ['React Native', 'Flutter', 'Firebase', 'Node.js'],
-      projects: ['Healthcare Mobile App', 'Corporate Branding Campaign', 'Educational Platform']
-    },
-    {
-      name: 'Emma Rodriguez',
-      position: 'UI/UX Designer',
-      bio: 'Award-winning designer focused on creating intuitive user experiences across all platforms.',
-      skills: ['UI/UX Design', 'Figma', 'Adobe Creative Suite', 'Prototyping'],
-      projects: ['E-commerce Platform Redesign', 'Healthcare Mobile App', 'Corporate Branding Campaign', 'Educational Platform']
-    },
-    {
-      name: 'James Wilson',
-      position: 'Graphic Designer',
-      bio: 'Creative visual designer with a keen eye for typography, color theory, and brand identity.',
-      skills: ['Graphic Design', 'Branding', 'Typography', 'Illustration'],
-      projects: ['Healthcare Mobile App', 'Corporate Branding Campaign']
-    },
-    {
-      name: 'David Wilson',
-      position: 'Content Creator',
-      bio: 'Creative storyteller with expertise in developing engaging content that drives conversions.',
-      skills: ['Content Creation', 'Video Production', 'Social Media', 'Storytelling'],
-      projects: ['E-commerce Platform Redesign', 'Corporate Branding Campaign']
-    },
-    {
-      name: 'Sophia Martinez',
+      name: 'Ramkumar',
       position: 'Content Writer',
       bio: 'Versatile writer with expertise in creating compelling copy for diverse industries and audiences.',
       skills: ['Content Writing', 'Copywriting', 'Blog Management', 'Proofreading'],
-      projects: ['Healthcare Mobile App', 'Corporate Branding Campaign', 'Educational Platform']
+      projects: ['Web Development & Digital Marketing for Tech Startup']
     },
     {
-      name: 'Lisa Thompson',
+      name: 'Ramkumar',
       position: 'SEO Specialist',
       bio: 'Data-driven SEO expert with proven track record of improving search rankings and organic traffic.',
       skills: ['SEO', 'Technical SEO', 'Analytics', 'Link Building'],
-      projects: ['E-commerce Platform Redesign', 'Healthcare Mobile App', 'Educational Platform']
+      projects: ['Web Development & Digital Marketing for Tech Startup', 'E-commerce Platform design']
+
     },
     {
-      name: 'Robert Davis',
+      name: 'Ramkumar',
       position: 'Digital Marketing Specialist',
       bio: 'Strategic marketer with expertise in PPC, social media advertising, and conversion optimization.',
       skills: ['PPC', 'Social Media Marketing', 'Email Marketing', 'Campaign Management'],
-      projects: ['Healthcare Mobile App', 'Corporate Branding Campaign']
+      projects: ['Web Development & Digital Marketing for Tech Startup']
     }
   ];
 
