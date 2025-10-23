@@ -7,6 +7,7 @@ import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import ScrollToTop from '../components/ScrollToTop';
 import WhatsAppButton from '../components/WhatsAppButton/WhatsAppButton';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata = {
   title: 'Primepath - Your Digital Solution',
