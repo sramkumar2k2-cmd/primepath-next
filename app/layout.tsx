@@ -22,6 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body suppressHydrationWarning={true}>
+
+        {/* ✅ Vercel Speed Insights */}
+        <SpeedInsights />
+
         {/* ✅ Global custom cursor */}
         <MouseEffects />
 
